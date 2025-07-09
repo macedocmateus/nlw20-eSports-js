@@ -2,6 +2,10 @@
 <html lang="pt-br">
 
 <head>
+    <link
+        href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eSports</title>
@@ -16,8 +20,33 @@
 
     <main>
         <section>
-            <h2>Assistente de Meta</h2>
-            <p>Pergunte sobre estratégia, build e dicas para seus jogos!</p>
+            <div>
+                <h2>Assistente de Meta</h2>
+                <p>Pergunte sobre estratégia, build e dicas para seus jogos!</p>
+
+                <form>
+                    <input type="password" placeholder="Informe a API KEY do Gemini" required>
+
+                    <select>
+                        <option value="">Selecione um jogo</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="lol">League of Legends</option>
+                        <option value="cs2">Counter-Striker 2</option>
+                    </select>
+
+                    <input type="text" placeholder="Ex: Melhor build para adc ...">
+
+                    <button>
+                        Perguntar
+                    </button>
+                </form>
+
+                <div id="aiResponse">
+                    <div class="response-content">
+
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
